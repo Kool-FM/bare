@@ -9,28 +9,37 @@
         <scene sceneID="bMl-4f-f3M">
             <objects>
                 <viewController id="Z8p-pB-zYH" customClass="ViewController" customModule="Bare" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8JV-m1-zip"/>
-                        <viewControllerLayoutGuide type="bottom" id="anb-vr-zNU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="d1B-wf-sZZ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6mx-Te-1tD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noY-Ej-TAP">
-                                <rect key="frame" x="281" y="285" width="39" height="30"/>
-                                <state key="normal" title="Push!"/>
-                                <connections>
-                                    <segue destination="78s-kD-WoS" kind="show" identifier="showDetails" id="c7T-Uo-Vya"/>
-                                </connections>
-                            </button>
-                        </subviews>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="noY-Ej-TAP" firstAttribute="centerY" secondItem="d1B-wf-sZZ" secondAttribute="centerY" id="2N5-v6-iZM"/>
-                            <constraint firstItem="noY-Ej-TAP" firstAttribute="centerX" secondItem="d1B-wf-sZZ" secondAttribute="centerX" id="yyk-jx-wAN"/>
-                        </constraints>
-                    </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="8Zj-CA-i08" style="IBUITableViewCellStyleDefault" id="hWP-ML-9zA">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hWP-ML-9zA" id="Zio-Fm-ptT">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Zj-CA-i08">
+                                            <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="78s-kD-WoS" kind="show" identifier="showDetails" id="0Ke-ty-0an"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Z8p-pB-zYH" id="Xtg-6f-Wam"/>
+                            <outlet property="delegate" destination="Z8p-pB-zYH" id="Gqp-vz-LgB"/>
+                        </connections>
+                    </tableView>
                     <navigationItem key="navigationItem" id="egj-PR-a56">
                         <barButtonItem key="rightBarButtonItem" title="Present!" id="oSj-sg-ZoQ">
                             <connections>

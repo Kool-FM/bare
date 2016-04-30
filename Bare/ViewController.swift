@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let 🖼s = [ "🏔", "🏞", "🌅" ]
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +27,31 @@ class ViewController: UIViewController {
         case "presentDetails":
             (segue.destinationViewController as! UINavigationController).topViewController?.title = "Modally presented 🖼"
         case "showDetails":
-            segue.destinationViewController.title = "Details 🖼"
+            guard let indexPath = (self.view as! UITableView).indexPathForSelectedRow else { return }
+            segue.destinationViewController.title = 🖼s[indexPath.row]
 
         default:
             break
         }
+    }
+    
+}
+
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 🖼s.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let 🖼 = 🖼s[indexPath.row]
+        cell.textLabel?.text = 🖼
+        return cell
     }
     
 }
