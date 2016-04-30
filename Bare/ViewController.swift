@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     let 🖼s = [ "🏔", "🏞", "🌅" ]
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Hellooo 👋"
@@ -48,9 +48,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("PictureCell", forIndexPath: indexPath) as! PictureCell
         let 🖼 = 🖼s[indexPath.row]
-        cell.textLabel?.text = 🖼
+        cell.configureFor🖼(🖼)
         return cell
     }
     
