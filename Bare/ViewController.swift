@@ -15,4 +15,21 @@ class ViewController: UIViewController {
         self.title = "Hellooo 👋"
     }
     
+    @IBAction func unwindToRoot(segue: UIStoryboardSegue) {
+        // nothing to do
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        switch segue.identifier! {
+            
+        case "presentDetails":
+            (segue.destinationViewController as! UINavigationController).topViewController?.title = "Modally presented 🖼"
+        case "showDetails":
+            segue.destinationViewController.title = "Details 🖼"
+
+        default:
+            break
+        }
+    }
+    
 }
