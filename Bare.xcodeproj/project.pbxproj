@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		870312681CD4F98700A48B90 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870312671CD4F98700A48B90 /* main.swift */; };
 		8703126A1CD4FB2400A48B90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870312691CD4FB2400A48B90 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		870312521CD4F91800A48B90 /* Bare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		870312611CD4F91800A48B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		870312671CD4F98700A48B90 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		870312691CD4FB2400A48B90 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +46,6 @@
 		870312541CD4F91800A48B90 /* Bare */ = {
 			isa = PBXGroup;
 			children = (
-				870312671CD4F98700A48B90 /* main.swift */,
 				870312691CD4FB2400A48B90 /* AppDelegate.swift */,
 				870312611CD4F91800A48B90 /* Info.plist */,
 			);
@@ -124,7 +121,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8703126A1CD4FB2400A48B90 /* AppDelegate.swift in Sources */,
-				870312681CD4F98700A48B90 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
