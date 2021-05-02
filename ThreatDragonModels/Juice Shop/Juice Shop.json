@@ -10,7 +10,128 @@
       {
         "title": "Juice Shop Threat Model Diagram",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 50,
+                "y": 50
+              },
+              "angle": 0,
+              "id": "a1ebd783-1ab8-456e-bb46-aedfde9da89d",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Client's Browser"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 267,
+                "y": 47
+              },
+              "angle": 0,
+              "id": "5d499cd2-18e6-4945-af22-248b8673276f",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Client's Browser"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 496,
+                "y": 49
+              },
+              "angle": 0,
+              "id": "edb6cedf-48e8-430d-b9ae-1389320189e3",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Client's Browser"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 27,
+                "y": 185
+              },
+              "target": {
+                "x": 699,
+                "y": 183
+              },
+              "vertices": [],
+              "id": "00f0c51a-73e2-4af9-81b7-7208c5dc7d65",
+              "z": 4,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 295,
+                "y": 279
+              },
+              "angle": 0,
+              "id": "313076d4-15f6-4c4c-8532-400da9d3e6ef",
+              "z": 5,
+              "attrs": {
+                "text": {
+                  "text": "process 4"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 5679.0498046875
+        }
       }
     ]
   }
